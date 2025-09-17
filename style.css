@@ -173,8 +173,9 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 10px;
   }
   nav a {
@@ -219,3 +220,4 @@ footer {
     font-size: 16px;
   }
 }
+
