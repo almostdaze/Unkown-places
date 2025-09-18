@@ -6,6 +6,7 @@
   <title>Unknown Places</title>
   <link rel="stylesheet" href="style.css?v=3"> <!-- external CSS link -->
 </head>
+<script src="script.js"></script>
 <body>
 
 <!-- Navbar -->
@@ -34,18 +35,27 @@
   </div>
 
   <div id="mountains" class="tab-content active" style="background-image: url('mount.jpg');">
-    <h3 style="color:white">Mystic Peaks</h3>
-    <p style="color:yellow">The peak of silence is when you are at the end of the world or away from the earth</p>
+    <h3 style="color:rgb(5, 5, 5)">Mystic Peaks</h3>
+    <p style="color:black">The peak of silence is when you are at the end of the world or away from the earth</p>
+  <div class="tab-buttons">
+    <button onclick="location.href='mountains.html'">Explore</button>
+  </div>
   </div>
 
-  <div id="forests" class="tab-content" style="background-image: url('for1.jpg');">
+  <div id="forests" class="tab-content" style="background-image: url('for.jpg');">
     <h3 style="color:white">Silent Woods</h3>
-    <p style="color:yellow">The music of the woods is the rustling of the trees</p>
+    <p style="color:white">The music of the woods is the rustling of the trees</p>
+  <div class="tab-buttons">
+    <button onclick="location.href='forests.html'">Explore</button>
+  </div>
   </div>
 
   <div id="lakes" class="tab-content" style="background-image: url('lake.jpg');">
-    <h3 style="color:white">Mirror Lake</h3>
-    <p style="color:yellow">The truth of yours can be found in these waters</p>
+    <h3 style="color:black">Mirror Lake</h3>
+    <p style="color:black">The truth of yours can be found in these waters</p>
+  <div class="tab-buttons">
+    <button onclick="location.href='lakes.html'">Explore</button>
+  </div>
   </div>
 </section>
 
@@ -71,14 +81,5 @@
   <p>© 2025 Unknown Places. All Rights Reserved.</p>
 </footer>
 
-<script>
-  function openTab(tabId) {
-    const contents = document.querySelectorAll(".tab-content");
-    contents.forEach(c => c.classList.remove("active"));
-    document.getElementById(tabId).classList.add("active");
-  }
-</script>
-
 </body>
 </html>
-
